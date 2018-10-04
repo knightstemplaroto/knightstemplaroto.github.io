@@ -1,0 +1,6 @@
+Redirect /calendar/ /calendar.html
+Redirect /donate/ /support.html
+Redirect /contact-us/ /contact.html
+Redirect /cancel/ /support-cancel.html
+Redirect /thankyou/ /support-thankyou.html
+Redirect /membership/o-t-o-forms-of-address/ /membership-forms-of-address.html
