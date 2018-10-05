@@ -1,3 +1,7 @@
+---
+layout: none
+permalink: .htaccess
+---
 Redirect /calendar/ /calendar.html
 Redirect /donate/ /support.html
 Redirect /contact-us/ /contact.html
