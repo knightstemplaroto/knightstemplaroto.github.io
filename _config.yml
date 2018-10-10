@@ -42,7 +42,9 @@ sass:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
+  - deploy
+
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules

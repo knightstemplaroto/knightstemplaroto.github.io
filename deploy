@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+jekyll build
+rsync -av _site/ knightstemplar-oto.org:knightstemplar-oto.org/
