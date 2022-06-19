@@ -57,3 +57,4 @@ exclude:
   - vendor/ruby/
   - deploy
   - serve
+  - README.md
