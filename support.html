@@ -21,8 +21,95 @@ title: Support
 
   <div class="row">
 
-    <div class="4u 12u$(medium)">
+    <div class="6u 12u$(medium)">
+      <h2>Recurring member dues or pledges</h2>
+      <script src="https://www.paypal.com/sdk/js?client-id=AbVyTgB4UnVb8kOfM4NhGC6mmbrM5uhqbGes3ZyRwLCBi-oYdvsEDBda2LmOotghTaGpN6DTB9z_R2CD&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+
+      <div class="box 12u 12u$(medium)">
+        <!-- # minerval or associate or supporter at $30/month -->
+        <div class="column">
+          <h3>Minerval, Associate, or Supporter ($30/month)</h3>
+          <div id="paypal-button-container-P-2F427779240918201MVJHN3A"></div>
+        </div>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'rect',
+                  color: 'blue',
+                  layout: 'vertical',
+                  label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  /* Creates the subscription */
+                  plan_id: 'P-2F427779240918201MVJHN3A'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+              }
+          }).render('#paypal-button-container-P-2F427779240918201MVJHN3A'); // Renders the PayPal button
+        </script>
+      </div>
+
+      <div class="box 12u 12u$(medium)">
+        <!-- # member (standard) at $50 / month -->
+        <div class="column">
+          <h3>Member - standard ($50 / month)</h3>
+          <div id="paypal-button-container-P-0N669126K4205650WMWTTIVY"></div>
+        </div>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'rect',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  /* Creates the subscription */
+                  plan_id: 'P-0N669126K4205650WMWTTIVY'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+              }
+          }).render('#paypal-button-container-P-0N669126K4205650WMWTTIVY'); // Renders the PayPal button
+        </script>
+      </div>
+
+      <div class="box 12u 12u$(medium)">
+        <!-- # member (additional support) at $93 / month -->
+        <div class="column">
+          <h3>Member - additional support ($93 / month)</h3>
+          <div id="paypal-button-container-P-1G503850C3608901JMWTTJ2I"></div>
+        </div>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'rect',
+                  color: 'silver',
+                  layout: 'vertical',
+                  label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  /* Creates the subscription */
+                  plan_id: 'P-1G503850C3608901JMWTTJ2I'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+              }
+          }).render('#paypal-button-container-P-1G503850C3608901JMWTTJ2I'); // Renders the PayPal button
+        </script>
+      </div>
+    </div>
+
+    <div class="6u 12u$(medium)">
       <h2>Donations</h2>
+      <p>Care to make a one-time donation?  </p>
       <form action="https://www.paypal.com/donate" method="post" target="_top">
         <input type="hidden" name="hosted_button_id" value="XLBNGU9KQWVBJ" />
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
@@ -31,37 +118,7 @@ title: Support
       </form>
     </div>
 
-    <div class="box 8u$ 12u$(medium)">
-      <h2>Recurring member dues or pledges</h2>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="84K4QPD9UV954">
-        <table>
-          <tr>
-            <td><input type="hidden" name="on0" value="Support Options">Support Options</td>
-          </tr>
-          <tr>
-            <td><select name="os0">
-                <option value="Minerval / Associate">Minerval / Associate : $30.00 USD - monthly</option>
-                <option value="Member">Member : $93.00 USD - monthly</option>
-                <option value="Member (weekly)">Member (weekly) : $21.50 USD - weekly</option>
-                <option value="Additional Support">Additional Support : $156.00 USD - monthly</option>
-                <option value="Great Beast">Great Beast : $666.00 USD - monthly</option>
-              </select> </td>
-          </tr>
-          <tr>
-            <td><input type="hidden" name="on1" value="Other Info (magical name, etc)">Other Info (magical name, etc)
-            </td>
-          </tr>
-          <tr>
-            <td><input type="text" name="os1" maxlength="200"></td>
-          </tr>
-        </table>
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0"
-          name="submit" alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-      </form>
+    <div class="12u 12u$(medium)">
       <h3>Manage Subscription</h3>
       <p>
         <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_subscr-find&alias=8H2RP3QQNPKXQ">
